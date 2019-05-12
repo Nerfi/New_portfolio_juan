@@ -1,4 +1,6 @@
-const card = document.querySelectorAll('.card-category');
+
+ const cards = document.querySelectorAll('.card-category');
+
 
 function toggleOpen() {
   this.classList.toggle('open');
@@ -13,9 +15,9 @@ this.classList.toggle('open-active');
 
 }
 
+}
 
 cards.forEach(card => card.addEventListener('click', toggleOpen));
 cards.forEach(card => card.addEventListener('transitionend', toggleActive));
 
-
-export { toggleOpen };
+export {toggleOpen};
