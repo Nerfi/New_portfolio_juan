@@ -2,7 +2,7 @@
 color:blue;
 background-color: red;
 font-size: 500px;
-background-image: url('https://images.unsplash.com/photo-1555540798-37191cf27b8c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=375&q=80');
+//background-image: url('https://images.unsplash.com/photo-1555540798-37191cf27b8c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=375&q=80');
 background-repeat: no-repeat;
 }
 
@@ -27,3 +27,36 @@ background-repeat: no-repeat;
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
+
+
+//adding css code for slide on scroll
+
+    .site-wrap {
+      max-width: 700px;
+      margin: 100px auto;
+      background:white;
+      padding:40px;
+      text-align: justify;
+    }
+
+
+     .align-right {
+      float:right;
+      margin-left:20px;
+      transform: translateX(110%);
+    }
+
+
+.slide-in {
+  opacity:0;
+  transition:1s;
+}
+
+.active {
+  opacity:1;
+   transition: transform .5s;
+  -webkit-transition: transform .5s;
+  transform: translateX(0%);
+
+}
+
