@@ -15,6 +15,7 @@
 
   // new css to see if it works
   //color: yellow;
+  margin-right: 50px;
   text-align: center;
   align-items: center;
   flex: 0.5;
@@ -41,7 +42,7 @@
 //flex child
 
 .card-category > * {
-  margin: 0;
+
   width: 100%;
   transition:transform 0.5s;
   border: 1px solid;
@@ -105,8 +106,8 @@
 
 //cards
 
-//.card-category {
-  ///margin:50px;
+.card-category {
+  //margin:50px;
   //padding:50px;
   //background-size: cover;
   //background-position: center;
@@ -120,7 +121,7 @@
   //text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   //border-radius: 5px;
   //box-shadow: 0 0 15px rgba(0,0,0,0.2);
-//}
+}
 
 
 //.cards {
