@@ -24,7 +24,7 @@ function checkSlide(e) {
 
   sliderImages.forEach(sliderImage => {
     //half way through images
-     const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 2;
+     const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 1.5;
     // bottom of the image
     const imageBottom = sliderImage.offsetTop + sliderImage.height;
     // half way in the images

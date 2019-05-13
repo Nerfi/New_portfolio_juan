@@ -42,8 +42,14 @@ background-repeat: no-repeat;
 
      .align-right {
       float:right;
-      margin-left:18px;
+      margin-left:20px;
       transform: translateX(110%);
+    }
+
+    .align-left {
+      float:left;
+      margin-right: 20px;
+      transform: translateY(-110%);
     }
 
 
