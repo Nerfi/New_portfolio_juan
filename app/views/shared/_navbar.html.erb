@@ -2,7 +2,8 @@
       <div class="container">
         <div class="logo">
           <a class="navbar-brand" href="<%= root_path %>">
-            <%#= fa_stacked_icon "camera inverse", base: "circle"%>
+
+            <i class="fa fa-camera-retro"></i>
             Juan Paredes
           </a>
         </div>
@@ -16,7 +17,8 @@
           <a><i class="fa fa-briefcase" ></i></a>
           <% if  %>
 
-              <i class="fa fa-user"></i>
+              <%= link_to "", about_index_path, class: "fa fa-user" %>
+
 
           <% else %>
             <a href="<%= new_user_session_path%>">
