@@ -5,18 +5,31 @@
 
 
 .cards {
+  min-height: 250px;
   overflow: hidden;
-  display:flex;
-  min-height: 100vh;
+  display: flex;
 }
 
 .card-category {
-flex: 1;
-background-size:cover;
- transition:
-  font-size 0.7s cubic-bezier(0.61,-0.19, 0.7, -0.11),
+
+
+  // new css to see if it works
+  //color: yellow;
+  text-align: center;
+  align-items: center;
+  flex: 0.5;
+  font-size: 50px;
+  background-size:cover;
+  background-position: center;
+
+  background-image: url("https://images.unsplash.com/photo-1557121066-f82d37cabc43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80");
+
+
+  transition:
+  font-size 0.7s cubic-bezier(0.60,-0.19, 0.7, -0.11),
   flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
   background 0.2s;
+
 
   border: 1px solid blue;
   justify-content: center;
@@ -32,7 +45,7 @@ background-size:cover;
   width: 100%;
   transition:transform 0.5s;
   border: 1px solid;
-  flex: 0 0 auto;
+  flex: 1 0 auto;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -92,29 +105,29 @@ background-size:cover;
 
 //cards
 
-.card-category {
-  margin:50px;
-  padding:50px;
-  background-size: cover;
-  background-position: center;
-  height: 180px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-}
+//.card-category {
+  ///margin:50px;
+  //padding:50px;
+  //background-size: cover;
+  //background-position: center;
+  //height: 180px;
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
+  //color: white;
+  //font-size: 24px;
+  //font-weight: bold;
+  //text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  //border-radius: 5px;
+  //box-shadow: 0 0 15px rgba(0,0,0,0.2);
+//}
 
 
-.cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
-}
+//.cards {
+  //display: grid;
+  //grid-template-columns: 1fr 1fr 1fr;
+  //grid-gap: 16px;
+//}
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
