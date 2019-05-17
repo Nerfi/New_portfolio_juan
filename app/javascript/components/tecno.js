@@ -35,3 +35,7 @@ slider.addEventListener('mousemove', (e) => {
  const walk = (x- startX) * 3; //for every pixel moved, you're gonna scroll the slider 3 pixels
  slider.scrollLeft = scrollLeft - walk;
 });
+
+
+
+export { slider };
