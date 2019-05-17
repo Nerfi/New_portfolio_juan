@@ -37,7 +37,7 @@
 
 
 .item {
-  width:200px;
+  width:300px;
   height: calc(100% - 40px);
   display: inline-flex;
   align-items: center;
@@ -50,10 +50,10 @@
 
 
 /// this is for the color
-.item:nth-child(9n+1) { background: dodgerblue;}
-.item:nth-child(9n+2) { background: goldenrod;}
-.item:nth-child(9n+3) { background: paleturquoise;}
-.item:nth-child(9n+4) { background: gold;}
+.item:nth-child(9n+1) { background-image: url('https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fs3.amazonaws.com%2Fviking_education%2Fweb_development%2Fprep_coding%2Fruby_small.jpg&f=1');}
+.item:nth-child(9n+2) { background-image:url('https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fhumancoders-formations.s3.amazonaws.com%2Fuploads%2Fcourse%2Flogo%2F1%2Fformation-ruby-on-rails.png&f=1');}
+.item:nth-child(9n+3) { background-image:url('https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fgit-for-windows.github.io%2Fimg%2Fgit_logo.png&f=1'); }
+.item:nth-child(9n+4) { background: gold; }
 .item:nth-child(9n+5) { background: cadetblue;}
 .item:nth-child(9n+6) { background: tomato;}
 .item:nth-child(9n+7) { background: lightcoral;}
@@ -61,6 +61,6 @@
 .item:nth-child(9n+9) { background: rebeccapurple;}
 
 
-/// con esto conseguimos cambiarle la forma de los items!
-.item:nth-child(even) { transform: scaleX(1.31) rotateY(40deg); }
-.item:nth-child(odd) { transform: scaleX(1.31) rotateY(-40deg); }
+/// con esto conseguimos cambiarle la forma de los items! a los pares e impares
+.item:nth-child(even) { transform: scaleX(1.34) rotateY(40deg); }
+.item:nth-child(odd) { transform: scaleX(1.31) rotateY(-45deg); }
