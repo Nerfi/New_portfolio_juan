@@ -16,5 +16,5 @@ toggleOpen();
 // img on slide
 debounce();
 checkSlide();
-
+// images to drag
 slider();

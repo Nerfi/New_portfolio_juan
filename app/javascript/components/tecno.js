@@ -6,7 +6,7 @@ let isDown = false;
 let startX;
 let scrollLeft;
 
-slider.addEventListener('mousedown', (e) => {
+slider.addEventListener('mousedown',(e) => {
   isDown = true;
   slider.classList.add('active');
   startX = e.pageX - slider.offsetLeft; //finding the place where the user initially clicked
