@@ -6,13 +6,18 @@ let isDown = false;
 let startX;
 let scrollLeft;
 
+if(slider){
+
+
 slider.addEventListener('mousedown',(e) => {
   isDown = true;
   slider.classList.add('active');
   startX = e.pageX - slider.offsetLeft; //finding the place where the user initially clicked
   scrollLeft = slider.scrollLeft;
 });
+}
 
+if(slider) {
 
 slider.addEventListener('mouseleave', () => {
  isDown = false;
@@ -20,12 +25,20 @@ slider.addEventListener('mouseleave', () => {
 
 });
 
+}
+
+if(slider) {
+
 slider.addEventListener('mouseup', () => {
  isDown = false;
  slider.classList.remove('active');
 
 });
 
+}
+
+
+if(slider) {
 
 slider.addEventListener('mousemove', (e) => {
  if(!isDown) return; // stop the function fron running
@@ -35,6 +48,9 @@ slider.addEventListener('mousemove', (e) => {
  const walk = (x- startX) * 3; //for every pixel moved, you're gonna scroll the slider 3 pixels
  slider.scrollLeft = scrollLeft - walk;
 });
+
+}
+
 
 
 
