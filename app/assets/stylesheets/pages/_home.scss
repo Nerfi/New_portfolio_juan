@@ -8,11 +8,13 @@
   //min-height: 150px;
   overflow: hidden;
   display: flex;
-  //width: 1050px;
+
+
 }
 
 .card-category {
 
+   box-shadow: 10px 10px 10px #888888;
 
   // new css to see if it works
   //color: yellow;
@@ -24,7 +26,7 @@
   background-size:cover;
   background-position: center;
 
-  background-image: url("https://images.unsplash.com/photo-1557121066-f82d37cabc43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80");
+  background-image: url("https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fcommunity-cdn-digitalocean-com.global.ssl.fastly.net%2Fassets%2Ftutorials%2Fimages%2Flarge%2FRubyonRails_tw_mostove.png%3F1468952973&f=1");
 
 
   transition:
@@ -110,7 +112,7 @@
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
-  .cards {
+  .card-category {
     grid-template-columns: 1fr 1fr;
 
   }
@@ -118,21 +120,21 @@
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
-  .cards {
+  .card-category {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-  .cards {
+  .card-category {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-  .cards {
+  .card-category {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
